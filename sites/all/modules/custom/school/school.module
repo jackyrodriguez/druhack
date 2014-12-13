@@ -1,0 +1,28 @@
+<?php 
+/**
+ * Implements hook_permission().
+ * Access Permission
+ */
+function school_permission() {
+  return array(
+    'access school' => array(
+      'title' => t('Access School Data'),
+      'description' => t('Access Data Pupulation of the Public Student.'),
+    ),
+  );
+}
+
+function school_menu() {
+    $items['view-population'] = array(
+      'title' => 'Population Data',
+      'type' => MENU_NORMAL_ITEM,
+      'access arguments' => array('access school'),
+      'page callback' => 'school_data',
+    );
+
+    return $items;
+}
+
+function school_data() {
+ return "Hello";
+}

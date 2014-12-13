@@ -1,0 +1,33 @@
+name = sketchup_omega
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/sketchup-omega.normalize.css
+stylesheets[all][] = css/sketchup-omega.hacks.css
+stylesheets[all][] = css/sketchup-omega.styles.css
+stylesheets[all][] = css/sketchup-omega.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/sketchup-omega.behaviors.js
+scripts[] = js/sketchup-omega-button-animate.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
